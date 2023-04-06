@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #f5f6f7;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+}
+
+.header {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    background: #0a0a23;
+    color: #fff;
+    border-bottom: 4px solid #fdb347;
+  }
+
+/* Flexbox is a one-dimensional CSS layout that can control the way items are spaced out and aligned within a container.
+To use it, give an element a display property of flex. This will make the element a flex container. Any direct children of a flex container are called flex items.
+Create a .gallery selector and make it a flex container. */
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Flexbox has a main and cross axis. The main axis is defined by the flex-direction property, which has four possible values:
+row (default): horizontal axis with flex items from left to right
+row-reverse: horizontal axis with flex items from right to left
+column: vertical axis with flex items from top to bottom
+column-reverse: vertical axis with flex items from bottom to top */
