@@ -12,6 +12,8 @@ body {
     width: 100%;
     max-width: 350px;
     height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .header {
@@ -30,6 +32,13 @@ Create a .gallery selector and make it a flex container. */
 .gallery {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
 }
 
 /* Flexbox has a main and cross axis. The main axis is defined by the flex-direction property, which has four possible values:
@@ -37,3 +46,8 @@ row (default): horizontal axis with flex items from left to right
 row-reverse: horizontal axis with flex items from right to left
 column: vertical axis with flex items from top to bottom
 column-reverse: vertical axis with flex items from bottom to top */
+
+.gallery::after {
+    content: "";
+    width: 350px;
+  }
